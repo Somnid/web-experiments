@@ -11,18 +11,33 @@
 		<style>
 			.hidden { visibility: hidden; }
 			.none { display: none; }
+			.clip { clip: rect(0px, 0px, 0px, 0px);
+    				height: 1px;
+    				width: 1px;
+    				overflow: hidden;
+    				position: absolute;
+    				white-space: nowrap 
+			}
 		</style>
 		<label>
 			<span>A checkbox</span>
 			<input type="checkbox">
 		</label>
+		<br />
 		<label>
 			<span>An invisible checkbox</span>
 			<input class="hidden" type="checkbox">
 		</label>
+		<br />
 		<label>
 			<span>A display none checkbox</span>
 			<input class="none" type="checkbox">
 		</label>
+		<br />
+		<label>
+			<span>A clip 0 checkbox</span>
+			<input class="clip" type="checkbox">
+		</label>
+		<br />
 	</body>
 </html>
